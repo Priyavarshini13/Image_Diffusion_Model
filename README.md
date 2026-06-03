@@ -1,66 +1,30 @@
 # Image_Diffusion_Model
 Built an AI image generation model using diffusion techniques and PyTorch.
-# Image Diffusion Model
+# Image_Diffusion_Model
 
-## Overview
-
-An AI-powered image generation system that creates high-quality images from text prompts using diffusion models. The model progressively transforms random noise into realistic images through iterative denoising.
+An AI-powered Text-to-Image Generation application that uses Stable Diffusion to create realistic images from natural language descriptions provided by the user.
 
 ## Features
 
-* Text-to-image generation
-* High-quality image synthesis
-* Custom prompt support
-* Diffusion-based image creation
-* Easy-to-use interface
+- Accepts user text prompts as input
+- Generates high-quality AI images
+- Uses Stable Diffusion v1.5 model
+- Supports GPU acceleration with CUDA
+- Displays generated images instantly
+- Saves generated images automatically
 
-## Tech Stack
+## Technologies Used
 
-* Python
-* PyTorch
-* Hugging Face Diffusers
-* Transformers
-* CUDA (GPU Acceleration)
+- Python
+- PyTorch
+- Diffusers
+- Transformers
+- Stable Diffusion v1.5
+- Matplotlib
 
 ## Installation
 
-```bash
-git clone <repository-url>
-cd Image_Diffusion_Model
-pip install -r requirements.txt
-```
-
-## Usage
+Install the required packages:
 
 ```bash
-python main.py
-```
-
-Enter a text prompt and the model will generate an image based on the description.
-
-## Example Prompt
-
-"A futuristic city at sunset with flying cars"
-
-## Project Structure
-
-```text
-Image_Diffusion_Model/
-│
-├── main.py
-├── requirements.txt
-├── generated_images/
-├── models/
-└── README.md
-```
-
-## Applications
-
-* AI Art Generation
-* Content Creation
-* Graphic Design
-* Creative Prototyping
-
-## Author
-
-Priyavarshini V
+pip install diffusers transformers accelerate torch matplotlib
